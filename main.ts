@@ -8,4 +8,16 @@ basic.forever(function () {
     } else {
         basic.setLedColors(0xff0000, 0xff0000, 0xff0000)
     }
+    if (neigung_y >= 2) {
+        basic.showLeds(`
+            # # . . .
+            # # . . .
+            # # . . .
+            # # . . .
+            # # . . .
+            `)
+    }
+    if (neigung_y < 2) {
+        basic.clearScreen()
+    }
 })
